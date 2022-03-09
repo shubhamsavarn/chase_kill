@@ -1,0 +1,67 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    background-color: yellow;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(luxaRFf.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+.hero{
+    background-image: url(red-knight-game-art-character-featured-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:194px;
+    height: 200px;
+    position: absolute;
+    bottom:0%;
+    left: 2px;
+}
+.obstacle{
+    background-image: url(dragon-insect-cartoon-leaf-png-favpng-K4nsCk98M6WKywQGRSbTKMfrs-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 210px;
+    position: absolute;
+    bottom:0%;
+    right: 2px;
+}
+.animateHero{
+    animation: hero 0.6s linear;
+}
+.obstacleAni{
+     animation: obstacleAni 5s linear infinite;
+}
+.Gameover{
+    visibilty:hidden;
+
+}
+@keyframes hero{
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom:403px;
+
+    }
+    100% {
+        bottom:0px;
+    }
+}
+@keyframes obstacleAni{
+    0% {
+        left:100vw;
+    }
+    100% {
+        left: -10vw;
+    }
+
+}
+
